@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.
+#!/usr/bin/python3
 x = (input("Write something! \n"))
 def decor(func):
       def wrap(text):
