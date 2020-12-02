@@ -16,7 +16,7 @@ while True:
     if y == "y":
        x = (input("Write something! \n"))
        print_text(x)
-       y = (input("Wanna write again?(y/n))
+       y = (input("Wanna write again?(y/n)"))
     elif y == "n":
      break
     else:
