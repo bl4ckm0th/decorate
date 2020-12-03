@@ -2,9 +2,14 @@
 x = (input("Write something! \n"))
 def decor(func):
       def wrap(text):
-          print("\n"+"=*"*(len(text)//2))
-          func(text)
-          print("=*"*(len(text)//2)+"\n")
+          if len(text)%2 == 0:
+            print("\n"+"=*"*(len(text)//2))
+            func(text)
+            print("=*"*(len(text)//2)+"\n")
+          else: 
+            print("\n"+"=*"*(len(text)//2)+"=")
+            func(text)
+            print("=*"*(len(text)//2)+"="+"\n")
       return wrap
 
 def print_text(text):
